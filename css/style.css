@@ -2,7 +2,7 @@ html {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
-    overflow-y: hidden;
+
 }
 
 
@@ -13,13 +13,9 @@ header {
 }
 
 body {
-/*     min-height: 1000px;
-    overflow: hidden; */
     background-image: url("../img/Небо.jpg");
     background-size: cover;
-    width: 100%;
-    max-width: 100%;
-    overflow-y: hidden;
+
 }
 
 button {
@@ -806,6 +802,15 @@ button {
 
 
 @media (max-width: 1600px){
+
+    html {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    
+
     .container {
         max-width: 1200px;
         overflow:hidden;
@@ -1835,22 +1840,126 @@ button {
 
 @media (max-width: 767px){
 
+    header {
+        display: flex;
+        margin: 2% 2% 0 2% ;
+    }
+
+    body {
+        background-image: url("../img/Небо.jpg");
+        background-size: cover;
+        width: 100%;
+        min-width: 450px;
+        
+    }
+
+    .screen {
+        cursor: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1000px;
+        height: 130%;
+        background-color: #FFFFFF;
+        opacity: .5;
+    }
+
     .container {
         max-width: none;
     }
     .subcontainer {
-        margin: 3% 0 0 5%;
+        margin: 5% 0 0 10%;
         display: flex;
         flex-wrap: wrap
     }
+
     .main {
-        margin: 0 0 0 0;
+        margin: 0px 40% 0px 0px;
         font-family: Poppins;
-        font-size: 38px;
+        font-size: 28px;
         font-weight: 600;
-        line-height: 57px;
+        line-height: 43px;
         letter-spacing: 0em;
         text-align: left;
+    
+        color: #FFFFFF;
+    }
+    
+    .name {
+        margin: 0 2% 0 1%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 15px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+        color: #992800;
+    
+        text-shadow: 0px 2px 30px #FFFFFF;
+    }
+    
+    .tagline {
+        margin: 0 0 0 0;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0px;
+        line-height: 140%;
+    /* or 18px */
+        color: #FFFFFF;
+    }
+    
+    .phone {
+        margin: 0 0 0 0;
+        font-family: Montserrat;
+        font-size: 0px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #FFFFFF;
+    }
+    
+    .button1 {
+        margin: 0 0 0 -28%;
+        display: flex;
+        overflow: hidden;
+        width: 25%;
+        border-radius: 5px;
+        background-image: url("../img/Кнопка\ Перезвонить.png");
+    }
+    .button1_text {
+        margin: 10% 1% 0 1%;
+        font-family: Montserrat;
+        font-size: 9px;
+        font-weight: 500;
+        line-height: 9px;
+        letter-spacing: 0.05em;
+        text-align: center;
+    
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+    }
+
+    .pointer {
+        margin: -10% 30% 0 40%;
+        width: 40px;
+        height: 40px;
+        background-image: url("../img/Стрелка.svg");
+        background-size: cover;
+    }
+
+    .main {
+        margin: 2% 10% 0px 0px;
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        text-align: center;
     
         color: #FFFFFF;
     }
@@ -1866,73 +1975,627 @@ button {
     
         text-shadow: 0px 2px 30px #FFFFFF;
     }
+
+    .pic1 {
+        margin: 0 0 0 0;
+        width: 0;
+        height: 0;
+        background-image: url("../img/Календарь\ иконка.png");
+    }
     
-    .tagline {
-        margin: 0 7% 0 0;
+    .pic1_text {
+        margin: 0 0 0 0;
+        width: 0;
+        height: 0;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 0px;
+        line-height: 20px;
+    /* or 125% */
+    
+        color: #FFFFFF;
+    }
+    
+    .quiz_text {
+        margin: 10% 15% 4% 0;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+    /* or 26px */
+    
+        color: #FFFFFF;
+    }
+    
+    .pic2 {
+        margin: 0 2% 0 0;
+        border-radius: 10px;
+        width: 140px;
+        height: 104.5px;
+        background-image: url("../img/Сваи\ фото.jpg");
+        background-size: cover;
+        /* 1.34 */
+    }
+    
+    .pic2_text {
+        margin: 1% 2% 1% 2%;
+        width: 200px;
+        height: 65px;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
-        font-size: 11px;
-        line-height: 140%;
-    /* or 18px */
+        font-size: 18px;
+        line-height: 120%;
+    
         color: #FFFFFF;
     }
     
-    .phone {
-        margin: 2px 7px 0 0;
-        font-family: Montserrat;
+    .special_price {
+        margin: -9% 0% 0 55%;
+        width: 125px;
+        height: 27px;
+        background-image: url("../img/Цена.png");
+
+        /* 4.63 */
+    }
+
+    .quiz_text2 {
+        text-align: center;
+        height: 100%;
+        margin: 10% 15% 0 0%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
         font-size: 20px;
-        font-weight: 700;
-        line-height: 24px;
-        letter-spacing: 0em;
-        text-align: left;
+        line-height: 120%;
+    
         color: #FFFFFF;
     }
     
-    .button1 {
-        display: flex;
-        overflow: hidden;
-        width: 15%;
+    .button2 {
+        cursor: pointer;
+        margin: 5% 10% 0 0;
+
         border-radius: 5px;
-        background-image: url("../img/Кнопка\ Перезвонить.png");
+        background-image: url("../img/Кнопка\ Рассчитать\ стоимость.jpg");
+        background-size: cover;
+        
     }
     
-    .button1_text {
-        margin: 7% 1% 0 1%;
-        font-family: Montserrat;
-        font-size: 9px;
-        font-weight: 500;
-        line-height: 12px;
-        letter-spacing: 0.05em;
+    .button2_text {
+        padding: 3% 2% 2% 3%;
+        font-family: 'Montserrat';
+        font-style: normal;
+    /*     width: 446px;
+        height: 56px; */
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        text-decoration: none;
         text-align: center;
-    
-        text-align: center;
-        letter-spacing: 0.05em;
         text-transform: uppercase;
     
         color: #FFFFFF;
     }
-
-    .button1_icon {
-        width: 0;
-        background-image: url("../img/Mask\ group.png");
+    
+    .underbutton {
+        margin: 1% 40% 2% 6%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        text-align: center;
+    
+        color: #FFFFFF;
     }
-
-    .pointer {
-        margin: -10% 10% 0 32%;
-        width: 46px;
-        height: 45px;
-        background-image: url("../img/Стрелка.svg");
+    
+    /* .pictures {
+        height: 100%;
+        width: 100%;
+    
+    } */
+    
+    
+    .home {
+        z-index:-1;
+        white-space: nowrap;
+        overflow: hidden;
+        position: absolute;
+        left: 53.5%;
+        top: 24.1%;
+        margin: 1% 40% 0 0;
+        border-radius: 5px;
+        width: 50%;
+        height: 40%;
+        background-image: url("../img/Дом\ с\ деревьями.png");
         background-size: cover;
     }
     
-    .special_price {
-        margin: -9% 10% 0 42%;
-        width: 125px;
-        height: 27px;
-        background-image: url("../img/Цена.png");
-    
+    .tree3 {
+        z-index:-1;
+        white-space: nowrap;
+        overflow: hidden;
+        position: absolute;
+        left: 0%;
+        top: 38.3%;
+        margin: 1% 40% 0 0;
+        border-radius: 5px;
+        width: 443px;
+        height: 708px;
+        background-image: url("../img/Ель\ 4.png");
+        background-size: cover;
     }
+
+
+    .question {
+        display: flex;
+        flex-wrap: wrap;
+        outline: 17px solid #F6F6F6;
+        position: absolute;
+        width: 90%;
+        height: 100%;
+        left: 16%;
+        top: 10%;
+    
+        background: #FFFFFF;
+        border-radius: 5px;
+    }
+
+    .q_number {
+        position: absolute;
+        margin: 5% 0 0 12%;
+        width: 250px;
+        height: 17.1px;
+        background-image: url("../img/Вопрос\ 1\ из\ 5.svg");
+        background-size: cover;
+        /* 14.58 */
+    }
+
+    .q2_number {
+        position: absolute;
+        margin: 5% 0 0 12%;
+        width: 250px;
+        height: 17.1px;
+        background-image: url("../img/Вопрос\ 2\ из\ 5.svg");
+        background-size: cover;
+    }
+    
+    .q3_number {
+        position: absolute;
+        margin: 5% 0 0 12%;
+        width: 250px;
+        height: 17.1px;
+        background-image: url("../img/Вопрос\ 3\ из\ 5.svg");
+        background-size: cover;
+    }
+    
+    .q4_number {
+        position: absolute;
+        margin: 5% 0 0 12%;
+        width: 250px;
+        height: 17.1px;
+        background-image: url("../img/Вопрос\ 4\ из\ 5.svg");
+        background-size: cover;
+    }
+    
+    .q5_number {
+        position: absolute;
+        margin: 5% 0 0 12%;
+        width: 250px;
+        height: 17.1px;
+        background-image: url("../img/Вопрос\ 5\ из\ 5.svg");
+        background-size: cover;
+    }
+
+    
+    
+    .q_quest {
+        position: absolute;
+        margin: 10% 0 0 10%;
+        max-width: 80%;
+        height: 100%;
+        
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 32px;
+        
+        text-align: center;
+        
+        color: #3C3C3C;
+    }
+    
+    .q_status {
+        position: absolute;
+        margin: 150% 0 0 40%;
+        width: 70px;
+        height: 18px;
+        background-image: url("../img/Онлайн.svg");
+        background-size: cover;
+        z-index: 2;
+        /* 3.89 */
+    }
+    
+    .q_name {
+        position: absolute;
+        margin: 155% 0 0 39%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 26px;
+        z-index: 2;
+        
+        text-align: center;
+        color: #141414;
+    }
+    
+    .q_subname {
+        position: absolute;
+        margin: 163% 0 0 35%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 16px;
+        /* identical to box height, or 129% */
+        z-index: 2;
+        
+        text-align: center;
+        
+        color: #141414;
+    }
+    
+    .q_text {
+        position: absolute;
+        margin: 170% 0 0 12%;
+        width: 260px;
+        height: 40px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 18px;
+        z-index: 2;
+        /* or 125% */
+        
+        text-align: center;
+        
+        color: #141414;
+    }
+    
+    .q_home {
+        position: absolute;
+        margin: 140% 0 0 1%;
+        width: 340px;
+        height: 255.6px;
+        background-image: url("../img/Конструкция\ дома.png");
+        background-size: cover;
+        opacity: 0.5;
+        /* 1.33 */
+    }
+
+    .q_variants {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        position: absolute;
+        margin: 30% 0 0 0%;
+    /*     background-color: #992800; */
+        width: 95%;
+        /* 1.18 */
+    }
+    
+    .q_var {
+        cursor: pointer;
+        width: 45%;
+        height: 40; 
+        background: url("../img/Rectangle\ 121.png");
+        background-size: cover;
+        box-sizing: border-box;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 10px;
+        /* 1.12 */
+    }
+    
+    .q1_text {
+        margin: 0 2% 0 2%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 19px;
+        /* or 111% */
+        
+        text-align: center;
+        
+        color: #7C7C7C;
+        
+    }
+    
+    .q1-1_img {
+        margin: 0 0 0 15%;
+        width: 132px;
+        height: 75px;
+        background: url("../img/Для\ постоянного\ проживания\ 1.png");
+        background-size: cover;
+        /* 1.76 */
+    }
+    
+    .q1-2_img {
+        margin: 0 0 0 15%;
+        width: 106.2px;
+        height: 85px;
+        background: url("../img/Дачный\ 1.png");
+        background-size: cover;
+        /* 1.25 */ 
+    }
+    
+    .q1-3_img {
+        margin: -20% -10% 6% 0%;
+        width: 165px;
+        height: 100px;
+        background: url("../img/Гостевой\ 1.png");
+        background-size: cover;
+        /* 1.65 */
+    }
+    
+    .q1-4_img {
+        margin: -10% 0 0 30%;
+        width: 54px;
+        height: 90px;
+        background: url("../img/Пока.png");
+        background-size: cover;
+        /* 0.6 */
+    }
+
+    .q3-1_img {
+        margin: -3% 0 -3% 15%;
+        width: 117px;
+        height: 90px;
+        background: url("../img/1\ этаж.png");
+        background-size: cover;
+        /* 1.3 */
+    }
+    
+    .q3-2_img {
+        margin: -20px 0 0 15%;
+        width: 117px;
+        height: 90px;
+        background: url("../img/2\ этажа.png");
+        background-size: cover;
+        /* 1.3 */
+    }
+    
+    .q3-3_img {
+        margin: -10% 0 0 15%;
+        width: 117px;
+        height: 90px;
+        background: url("../img/1\ этаж\ +\ мансарда.png");
+        background-size: cover;
+        /* 1.3 */
+    }
+    
+    .q3-4_img {
+        margin: -10% 0 0 30%;
+        width: 54px;
+        height: 90px;
+        background: url("../img/Пока.png");
+        background-size: cover;
+
+    }
+    
+    .q_back {
+        position: absolute;
+        margin: 130% 0 0 2%;
+        width: 150px;
+        height: 46.6px; 
+    /*     border-radius: 3,22 */
+        background: url("../img/Кнопка\ Назад.svg");
+        background-size: cover;
+    }
+    
+    .q_next {
+        position: absolute;
+        margin: 130% 0 0 50%;
+        width: 150px;
+        height: 46.6px; 
+    /*     border-radius: 3,22%; */
+        background: url("../img/Кнопка\ Далее.png");
+        background-size: cover;
+    }
+
+    .q2_var {
+        margin: 1% 0 0 1%;
+        cursor: pointer;
+        width: 380px;
+        height: 43.4px;
+        background: url("../img/Rectangle\ 42.svg");
+        background-size: cover;
+        box-sizing: border-box;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 10px;
+        /* 8.75 */
+    }
+    
+    .q2_var_text {
+        margin: 1% 0 0 0 ;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
+        /* or 111% */
+        
+        text-align: center;
+        
+        color: #7C7C7C;
+            
+    }
+
+    .thank_u {
+        margin: 9% 5% 0 5%;
+        width: 90%;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 24px;
+        /* or 117% */
+        text-align: center;
+        
+        color: #3C3C3C;    
+    }
+    
+    .thank_q {
+        margin: 2% 0 0 0;
+        width: 100%;
+        height: 3%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 32px;
+        /* or 160% */
+        text-align: center;
+        
+        color: #3C3C3C;    
+    }
+    
+    .thank_var {
+        margin: 2% 5% 0 5%;
+        width: 90%;
+        height: 35%;
+    }
+    
+    .thank_v1 {
+        border-radius: 10px;
+        box-shadow: 0 0 0 1px rgb(184, 184, 184);
+        margin: 0 3% 0 15%;
+        width: 100px;
+        height: 100px;
+        background: url("../img/Вотсап.png");
+    /*     background-size: cover;    */ 
+    }
+    
+    .thank_v2 {
+        border-radius: 10px;
+        box-shadow: 0 0 0 1px rgb(184, 184, 184);
+        margin: 0 3% 0 0;
+        width: 100px;
+        height: 100px;
+        background: url("../img/Вайбер.png");
+    /*     background-size: cover;    */ 
+    }
+    
+    .thank_v3 {
+        border-radius: 10px;
+        box-shadow: 0 0 0 1px rgb(184, 184, 184);
+        margin: 3% 3% 0 15%;
+        width: 100px;
+        height: 100px;
+        background: url("../img/Телеграм.png");
+    /*     background-size: cover;    */ 
+    }
+    
+    .thank_v4 {
+        border-radius: 10px;
+        box-shadow: 0 0 0 1px rgb(184, 184, 184);
+        margin: 3% 3% 0 0;
+        width: 100px;
+        height: 100px;
+        background: url("../img/Телефон.png");
+    /*     background-size: cover;    */ 
+    }
+    
+    .thank_under {
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 35%;
+        display: flex;
+        z-index: 3;
+    }
+    
+    .thank_img {
+        margin: 0 0 0 0;
+        width: 0;
+        height: 0;
+        background: url("../img/Мокап-2\ 1.png");
+    }
+    
+    .thank_img_text {
+        margin: 0 0 0 0;
+        background: url("../img/yellow.svg");
+        background-size: cover;
+        width: 0;
+        height: 0;
+        /* 3.81 */
+    }
+    
+    .thank_img_text {
+        padding: 4% 0 0 0;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 15px;
+        /* or 133% */
+        
+        color: #676767;    
+    }
+    
+    
+    .thank_cont_container {
+        width: 280px;
+        justify-content: right;
+        align-items: right;
+    }
+    
+    
+    .input-phone {
+        margin: 0 0 5% 0;
+        border: none;
+        background: url("../img/Rectangle\ 43.svg");
+        background-size: cover;
+        width: 335px;
+        height: 62px;
+    
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+        text-align: center;
+        /* identical to box height, or 118% */
+        text-transform: uppercase;
+        
+        color: #818181;
+    }
+    
+    .send_phone {
+        margin: 0 0 7% 0;
+        width: 335px;
+        height: 73px; 
+        background: url("../img/Red.svg");
+        background-size: cover;    
+    
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        
+        color: #FFFFFF;    
+    }
+    
 }
 
 /* 555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555 */
